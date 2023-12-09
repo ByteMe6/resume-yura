@@ -1,79 +1,141 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .text-box {
-  background-color: #f5d651;
   font-family: "Inter";
   .name {
     text-transform: uppercase;
   }
 }
-
-.my-photo {
-  height: 150%;
-  width: 15%;
-  // margin-top: px;
-  // top: 100px;
-  border: 25px solid #f5d651;
-  position: relative;
-  border-radius: 200px 0px 200px 200px;
-  line-height: 0px;
-}
-.text-box {
-  width: 81%;
-  position: absolute;
-  font-size: xx-large;
-  line-height: 0px;
-}
-.text-box,
-.my-photo {
-  display: inline-block;
-  // position: absolute;
-}
-
-.box-black {
-  background: #2a2e36;
-  height: 100%;
-  width: 25%;
+* {
   padding: 0;
   margin: 0;
-  position: absolute;
-  z-index: 1;
 }
-.box-contact {
-  z-index: 3;
-  position: relative;
-  padding: 30px;
 
-  img {
-    width: 49px;
+body{
+padding: 48px 48px 64px 48px;
+background-color: black;
+}
+
+.grey {
+  color: var(--gray, #c2c2c2);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 19.2px */
+  letter-spacing: 0.24px;
+}
+
+.container {
+  border-radius: 24px;
+  background: var(
+    --balck,
+    radial-gradient(205.3% 154.51% at 91.33% -10.25%, #212225 0%, #1f2025 100%)
+  );
+  text-align: center;
+  align-items: center;
+  margin: 48px;
+}
+p,
+h1,
+h3,
+h2,
+h4,
+h5,
+h6,
+span, a {
+  color: white;
+  font-family: "Inter";
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.photo{
+  height: 185px;
+}
+.base-info{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+  padding: 24px;  
+}
+.info{
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.base-info{
+  text-align: start;
+}
+
+.photo{
+  margin-right: 40px;
+}
+
+.work-exp-heading,.skills-heading{
+  font-family: "Inter";
+  margin: 0px 0px 0 80px;
+}
+.job-box-text{
+  font-family: "Inter";
+  text-align: start;
+}
+.work-exp{
+  padding: 24px;
+}
+.time-period-job{
+  opacity: 0.64;
+}
+// opacity: 0.84;
+.description-job{
+  opacity: 0.84;
+}
+
+.two-rows-box-skills{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  p{
+    margin: 0;
+    padding: 0;
   }
 }
-
-a {
-  color: aliceblue;
-  text-decoration: none;
-  font-family: "Inter";
-  font-size: 30px;
-  position: relative;
-  margin: 0;
-  padding: 0;
+.skills{
+  padding: 24px;
 }
-.contact-box-item {
-  align-items: center;
+.container{
+  padding: 24px;
+}
+.projects{
   text-align: start;
-  overflow: hidden;
-  width: auto;
-  display: inline;
-  display: inline;
-}
-.box-contact {
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  align-items: center;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.edu-heading{
-    text-align: left;
-    color: red;
+
+
+
+
+
+
+
+
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+
+body{
+  width: 70% !important;
+  // overflow: ;
+  overflow-x: hidden;
+  overflow-wrap: hidden;
 }
