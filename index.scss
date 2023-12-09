@@ -133,9 +133,20 @@ a{
 // 
 // 
 
+@media (max-width: 1000px){
 body{
-  width: 70% !important;
+  width: 90% !important;
   // overflow: ;
   overflow-x: hidden;
   overflow-wrap: hidden;
+}
+}
+
+html{
+  text-align: center;
+  align-items: center;
+  padding: 0;
+}
+body{
+  padding: 0;
 }

@@ -125,8 +125,19 @@ a {
   flex-direction: column;
 }
 
+@media (max-width: 1000px) {
+  body {
+    width: 90% !important;
+    overflow-x: hidden;
+    overflow-wrap: hidden;
+  }
+}
+html {
+  text-align: center;
+  align-items: center;
+  padding: 0;
+}
+
 body {
-  width: 70% !important;
-  overflow-x: hidden;
-  overflow-wrap: hidden;
+  padding: 0;
 }
