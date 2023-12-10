@@ -141,3 +141,23 @@ html {
 body {
   padding: 0;
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 65%;
+  }
+  .base-info {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .base-info img {
+    width: auto;
+    height: 80px;
+  }
+  p, span {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+}

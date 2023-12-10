@@ -150,3 +150,26 @@ html{
 body{
   padding: 0;
 }
+
+@media (max-width: 600px){
+  .container {
+    width: 65%;
+  }
+
+  .base-info{
+    img{
+      width: auto;
+        height: 80px;
+    }
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  p,span{
+    font-size: 10px;
+  }
+  h1{
+    font-size: 15px;
+  }
+
+}
