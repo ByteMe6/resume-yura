@@ -52,6 +52,8 @@ a{
 }
 .photo{
   height: 185px;
+  width: 185px;
+  object-fit:cover; /*для img*/
 }
 .base-info{
     display: flex;
