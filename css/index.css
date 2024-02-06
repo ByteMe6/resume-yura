@@ -204,8 +204,3 @@ a {
   color: black;
 }
 /* add to scss */
-@media (max-width: 500px) {
-  .container{
-    width: 60%;
-  }
-}
