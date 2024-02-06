@@ -135,6 +135,9 @@ a {
     overflow-x: hidden;
     overflow-wrap: hidden;
   }
+  .container {
+    width: 95%;
+  }
 }
 html {
   text-align: center;
@@ -168,5 +171,11 @@ body {
 .badPr {
   border-radius: 30px;
   background-color: rgba(224, 39, 39, 0.603);
+  padding: 7px;
+}
+
+.OnlyStart {
+  border-radius: 30px;
+  background-color: rgba(78, 205, 255, 0.603);
   padding: 7px;
 }
