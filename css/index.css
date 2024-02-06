@@ -206,7 +206,6 @@ a {
 /* add to scss */
 @media (max-width: 500px) {
   .container{
-    margin: 25%;
     width: 60%;
   }
 }
