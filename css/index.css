@@ -148,7 +148,7 @@ body {
 
 @media (max-width: 600px) {
   .container {
-    width: 65%;
+    width: 80%;
   }
   .base-info {
     justify-content: space-around;
