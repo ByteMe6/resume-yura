@@ -179,3 +179,27 @@ body {
   background-color: rgba(78, 205, 255, 0.603);
   padding: 7px;
 }
+
+.medium {
+  border-radius: 30px;
+  background-color: rgba(71, 255, 237, 0.463);
+  padding: 5px;
+}
+
+a {
+  margin: 8px;
+}
+
+.pgd {
+  border-radius: 30px;
+  background-color: rgba(122, 255, 166, 0.694);
+  padding: 5px;
+  color: black;
+}
+
+.pg {
+  border-radius: 30px;
+  background-color: rgba(142, 255, 180, 0.974);
+  padding: 5px;
+  color: black;
+}
