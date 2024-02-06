@@ -203,4 +203,25 @@ a {
   padding: 5px;
   color: black;
 }
-/* add to scss */
+
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    padding: 10px;
+    margin-left: 13%;
+    margin-right: 0;
+  }
+  .container h1 {
+    font-size: 13px;
+  }
+  .container p, .container span, .container a {
+    font-size: 8px;
+  }
+  .container .pg, .container .badPr, .container .pgd {
+    padding: 2px;
+  }
+}

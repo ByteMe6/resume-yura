@@ -209,3 +209,33 @@ a{
   padding: 5px;
   color: black;
 }
+@media (max-width: 500px) {
+  // .container{
+    // width: 40px;
+    // margin: 2px;
+    // position: absolute;
+  // }
+  // .skills-heading{
+  //   position: relative;
+  // }
+  body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .container{
+    padding: 10px;
+    margin-left: 13%;
+    margin-right: 0;
+    h1{
+      font-size: 13px;
+    }
+    p,span,a{
+      font-size: 8px;
+    }
+    .pg, .badPr, .pgd{
+      padding: 2px;
+    }
+  }
+}
+
