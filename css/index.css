@@ -218,10 +218,62 @@ a {
   .container h1 {
     font-size: 13px;
   }
-  .container p, .container span, .container a {
+  .container p, .container span, .container a, .container li, .container span {
     font-size: 8px;
   }
   .container .pg, .container .badPr, .container .pgd {
     padding: 2px;
   }
+}
+.blueBold {
+  color: rgb(41, 121, 190);
+}
+
+.list-element {
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+  list-style: none;
+}
+
+.grey {
+  color: rgb(166, 166, 166);
+}
+
+.roundedBorder {
+  border-radius: 10px;
+  background-color: rgb(86, 86, 86);
+  padding: 4px;
+}
+
+* {
+  font-family: "Inter";
+}
+
+.iDid {
+  text-align: left;
+  margin-left: 35%;
+}
+
+.endeeee {
+  text-align: right;
+  margin-right: -24%;
+}
+
+.list {
+  margin-left: 40%;
+  text-align: start;
+}
+
+.Time-NiceView {
+  position: absolute;
+  right: 10%;
+}
+@media (max-width: 500px) {
+  .Time-NiceView {
+    right: 15%;
+  }
+}
+
+.exp-ece {
+  position: relative;
 }
