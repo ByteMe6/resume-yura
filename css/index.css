@@ -276,4 +276,5 @@ a {
 
 .exp-ece {
   position: relative;
+  display: inline-block;
 }
