@@ -42,7 +42,8 @@ h2,
 h4,
 h5,
 h6,
-span, a {
+span,
+a {
   color: white;
   font-family: "Inter";
 }
@@ -82,7 +83,8 @@ a {
   margin-right: 40px;
 }
 
-.work-exp-heading, .skills-heading {
+.work-exp-heading,
+.skills-heading {
   font-family: "Inter";
   margin: 0px 0px 0 80px;
 }
@@ -106,7 +108,7 @@ a {
 
 .two-rows-box-skills {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 0;
   margin: 0;
 }
@@ -161,7 +163,8 @@ body {
     width: auto;
     height: 80px;
   }
-  p, span {
+  p,
+  span {
     font-size: 10px;
   }
   h1 {
@@ -218,10 +221,16 @@ a {
   .container h1 {
     font-size: 13px;
   }
-  .container p, .container span, .container a, .container li, .container span {
+  .container p,
+  .container span,
+  .container a,
+  .container li,
+  .container span {
     font-size: 8px;
   }
-  .container .pg, .container .badPr, .container .pgd {
+  .container .pg,
+  .container .badPr,
+  .container .pgd {
     padding: 2px;
   }
 }
@@ -229,7 +238,8 @@ a {
   color: rgb(41, 121, 190);
 }
 
-.list-element, .list {
+.list-element,
+.list {
   color: rgb(255, 255, 255);
   margin-top: 5px;
   list-style: none;
@@ -294,4 +304,9 @@ a {
   .container {
     width: 90%;
   }
+}
+.OnlyStartB {
+  border-radius: 30px;
+  background-color: rgba(255, 120, 120, 0.603);
+  padding: 6px;
 }
