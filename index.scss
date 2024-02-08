@@ -285,8 +285,24 @@ a{
   display: inline-block;
 }
 
+.work-exp{
+  @media (max-width:700px) {
+    // padding: 0;
+    .list{
+      margin-left: 45%;
+    }
+  }
+  @media (max-width: 315px) {
+        .list {
+            margin-left: 35%;
+          }
+  }
+}
 
-
+@media (max-width: 850px){
+  .container{ 
+    width:90%;}
+}
 
 
 

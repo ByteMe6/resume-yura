@@ -278,3 +278,20 @@ a {
   position: relative;
   display: inline-block;
 }
+
+@media (max-width: 700px) {
+  .work-exp .list {
+    margin-left: 45%;
+  }
+}
+@media (max-width: 315px) {
+  .work-exp .list {
+    margin-left: 35%;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 90%;
+  }
+}
