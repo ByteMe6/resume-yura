@@ -310,3 +310,17 @@ a {
   background-color: rgba(255, 120, 120, 0.603);
   padding: 6px;
 }
+
+/* animation class and keyframes */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.goiteens {
+  background-color: red;
+}
+
+.goiteense-container {
+  align-items: center;
+  text-align: center;
+}
