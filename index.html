@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
   <title>Yura resume</title>
 </head>
 <body>
-  <section class="base-info container">
+  <section data-aos="zoom-in-up" data-aos-duration="3000" class="base-info container" >
     <img src="./img.png" alt="" class="photo" style="border-radius: 100%;">
     <div class="text-box">
       <h1 class="name">
@@ -33,30 +34,9 @@
     </div>
   </section>
 
-  <!-- <h2 class="work-exp-heading">
-    Work expiriance
-  </h2> -->
-
-  <!-- <section class="container work-exp">
-    <div class="job-container">
-      <h3 class="job-name job-box-text">
-        Nothing
-      </h3>
-      <h4 class="job-box-text">nothing</h4>
-
-      <p class="job-box-text time-period-job">
-        0
-      </p>
-
-      <p class="job-box-text description-job">
-        No work
-      </p>
-    </div>
-  </section> -->
-
 
   <h2 class="skills-heading">Skills</h2>
-  <section class="container skills">
+  <section  data-aos="zoom-in-right" data-aos-duration="3000" class="container skills">
     <div class="two-rows-box-skills">
       <div class="first">
         <p>Html</p>
@@ -84,7 +64,7 @@
   </section>
 
   <h2 class="skills-heading">Projects</h2>
-  <section class="container projects">
+  <section class="container projects"  data-aos="zoom-in-left" data-aos-duration="3000" >
     <a href="https://ByteMe6.github.io/practicnharobota2/">Nice View
       <!-- <span class="pgd">pretty good desing</span>  -->
       <!-- <span class="pg">adaptation</span> -->
@@ -101,6 +81,8 @@
         </a>
 
         <a href="https://byteme6.github.io/milena-art/">ArtShop</a>
+        <a href="https://ByteMe6.github.io/findCountry/">find country</a>
+        <a href="https://ByteMe6.github.io/pictureFind/">image find</a>
 
 
 
@@ -109,7 +91,7 @@
 
   <h2 class="skills-heading">Work expiriance</h2>
 
-    <section class="container work-exp">
+    <section  data-aos="zoom-in-right" data-aos-duration="1500" class="container work-exp">
 
 
         <span></span> <a  class="exp-ece" href="https://ByteMe6.github.io/milena-art/">Artshop</a>    <span class="Time-NiceView">2023.12 - 2024.01 <span class="grey roundedBorder">my: 2023.12 - 2023.12</span></span>
@@ -225,12 +207,16 @@
 
     <h2 class="skills-heading">Education</h2>
 
-    <section class="container edu">
+    <section class="container edu"  data-aos="zoom-in" data-aos-duration="1500">
       <div class="goiteense-container">
               <img src="./img/icons/goiteens.png" alt="Goiteens" width="10%" class="goiteenss"/>
       <span>2022 - 2024</span> <!-- change later-->
       </div>
   </section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>AOS.init();</script>
 </body>
 </html>
-<!-- 123 -->
