@@ -26,7 +26,8 @@ body {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 19.2px */
+  line-height: 160%;
+  /* 19.2px */
   letter-spacing: 0.24px;
 }
 
@@ -346,7 +347,6 @@ a {
   align-items: center;
   text-align: center;
 }
-
 .button {
   background-color: #3498db;
   color: white;
@@ -368,7 +368,10 @@ a {
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
 }
 
-.skills, .projects, .work-exp, .edu {
+.skills,
+.projects,
+.work-exp,
+.edu {
   background-color: #2c3e50;
   padding: 20px;
   border-radius: 8px;
@@ -377,23 +380,97 @@ a {
   transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.skills:hover, .projects:hover, .work-exp:hover, .edu:hover {
+.skills:hover,
+.projects:hover,
+.work-exp:hover,
+.edu:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
 
-input[type=text], textarea {
+input[type=text],
+textarea {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-input[type=text]:focus, textarea:focus {
+input[type=text]:focus,
+textarea:focus {
   border-color: #3498db;
   box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
 
-input[type=text]:hover, textarea:hover {
+input[type=text]:hover,
+textarea:hover {
   border-color: #2980b9;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.base-info,
+.skills,
+.projects,
+.work-exp,
+.edu {
+  margin-bottom: 40px;
+}
+
+.photo {
+  margin: 0 auto;
+  display: block;
+}
+
+.text-box {
+  margin: 0 auto;
+}
+
+.two-rows-box-skills {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills-heading {
+  margin: 20px 0;
+}
+
+.list-body-exp {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.exp-ece {
+  text-align: center;
+  display: block;
+}
+
+.goiteense-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2 {
+  text-align: center;
 }
