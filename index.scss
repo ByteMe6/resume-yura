@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #000000;
@@ -38,11 +38,34 @@ body {
   margin: 0 auto;
   padding: 20px;
   border-radius: 24px;
-  background: var(--black, radial-gradient(205.3% 154.51% at 91.33% -10.25%, #212225 0%, #1f2025 100%));
+  background: var(
+    --black,
+    radial-gradient(205.3% 154.51% at 91.33% -10.25%, #212225 0%, #1f2025 100%)
+  );
   text-align: center;
   align-items: center;
-  margin: 48px auto;
+  margin: 20px auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 1024px) {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    padding: 5px;
+    border-radius: 20px;
+    width: 50%;
+  }
+
+  @media (max-width: 400px) {
+    padding: 5px;
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 p,
@@ -126,6 +149,9 @@ a:hover {
 }
 
 .work-exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   padding: 24px;
 }
 
@@ -257,7 +283,6 @@ a {
 }
 
 @media (max-width: 500px) {
-
   // .container{
   // width: 40px;
   // margin: 2px;
@@ -355,7 +380,6 @@ a {
 
 .work-exp {
   @media (max-width: 700px) {
-
     // padding: 0;
     .list {
       margin-left: 45%;
@@ -367,6 +391,9 @@ a {
       margin-left: 35%;
     }
   }
+
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
 @media (max-width: 850px) {
@@ -454,4 +481,34 @@ textarea:focus {
 input[type="text"]:hover,
 textarea:hover {
   border-color: #2980b9;
+}
+
+h2.skills-heading {
+  margin: 20px 0;
+  color: white;
+  font-family: "Inter";
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 24px;
+  background: var(--black, radial-gradient(205.3% 154.51% at 91.33% -10.25%, #212225 0%, #1f2025 100%));
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 700px) {
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: 1000px) {
+    width: 80%;
+    margin: 0 auto;
+    // margin-right: 10rem;
+    margin-left: 15%;
+    margin-bottom: 5rem;
+  }
 }

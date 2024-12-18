@@ -39,8 +39,31 @@ body {
   background: var(--black, radial-gradient(205.3% 154.51% at 91.33% -10.25%, #212225 0%, #1f2025 100%));
   text-align: center;
   align-items: center;
-  margin: 48px auto;
+  margin: 20px auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 5px;
+    border-radius: 20px;
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    padding: 5px;
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 p,
@@ -125,6 +148,9 @@ a:hover {
 }
 
 .work-exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   padding: 24px;
 }
 
@@ -319,6 +345,10 @@ a {
   display: inline-block;
 }
 
+.work-exp {
+  align-content: flex-start;
+  align-items: flex-start;
+}
 @media (max-width: 700px) {
   .work-exp .list {
     margin-left: 45%;
@@ -413,4 +443,35 @@ textarea:focus {
 input[type=text]:hover,
 textarea:hover {
   border-color: #2980b9;
+}
+
+h2.skills-heading {
+  margin: 20px 0;
+  color: white;
+  font-family: "Inter";
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 24px;
+  background: var(--black, radial-gradient(205.3% 154.51% at 91.33% -10.25%, #212225 0%, #1f2025 100%));
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 15%;
+    margin-bottom: 5rem;
+  }
 }
