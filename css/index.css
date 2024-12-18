@@ -39,7 +39,7 @@ body {
   background: var(--black, radial-gradient(205.3% 154.51% at 91.33% -10.25%, #212225 0%, #1f2025 100%));
   text-align: center;
   align-items: center;
-  margin: 48px;
+  margin: 48px auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -76,6 +76,13 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+@media (max-width: 600px) {
+  .photo {
+    width: 100px;
+    height: 100px;
+    display: none;
+  }
 }
 
 .photo:hover {
@@ -347,6 +354,7 @@ a {
   align-items: center;
   text-align: center;
 }
+
 .button {
   background-color: #3498db;
   color: white;
@@ -405,72 +413,4 @@ textarea:focus {
 input[type=text]:hover,
 textarea:hover {
   border-color: #2980b9;
-}
-
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.base-info,
-.skills,
-.projects,
-.work-exp,
-.edu {
-  margin-bottom: 40px;
-}
-
-.photo {
-  margin: 0 auto;
-  display: block;
-}
-
-.text-box {
-  margin: 0 auto;
-}
-
-.two-rows-box-skills {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.skills-heading {
-  margin: 20px 0;
-}
-
-.list-body-exp {
-  text-align: left;
-  margin: 0 auto;
-}
-
-.exp-ece {
-  text-align: center;
-  display: block;
-}
-
-.goiteense-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1,
-h2 {
-  text-align: center;
 }

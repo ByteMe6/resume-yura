@@ -41,7 +41,7 @@ body {
   background: var(--black, radial-gradient(205.3% 154.51% at 91.33% -10.25%, #212225 0%, #1f2025 100%));
   text-align: center;
   align-items: center;
-  margin: 48px;
+  margin: 48px auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -77,6 +77,12 @@ a:hover {
   margin-bottom: 20px;
   object-fit: cover;
   transition: transform 0.3s, box-shadow 0.3s;
+
+  @media (max-width: 600px) {
+    width: 100px;
+    height: 100px;
+    display: none;
+  }
 }
 
 .photo:hover {
