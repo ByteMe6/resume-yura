@@ -1,11 +1,12 @@
 // vars
 $shadow-color: rgba(119, 119, 119, 0.53);
+$shadow-color-forBG: rgba(119, 119, 119, 0.35);
 $shadow-size: 0px 5px 30px 7px;
 $box-color: #2e2d34;
 $text-color: #e0e0e0;
 $body-bg: #1e1e26;
 $grey: rgb(166, 166, 166);
-$hover-color: rgb(255, 105, 180);
+$hover-color: rgb(246, 178, 141);
 $border-radius: 20px;
 
 // styles
@@ -138,7 +139,8 @@ main {
     width: 100%;
   }
 }
-.mainInfoBox, .nav {
+.mainInfoBox,
+.nav {
   &:hover {
     transform: scale(1.1);
     -webkit-box-shadow: $shadow-size $shadow-color;
@@ -146,3 +148,190 @@ main {
     box-shadow: $shadow-size $shadow-color;
   }
 }
+
+.fade-out {
+  animation: fadeOutLeft 0.5s forwards;
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.newBox {
+  animation: slideInRight 0.5s forwards;
+  margin-top: 20px;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translatX(30px);
+    filter: blur(10px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-10px);
+    filter: blur(0);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.jsBox {
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.5s;
+  display: block;
+
+  &:hover {
+    transform: scale(1.4);
+    -webkit-box-shadow: $shadow-size $shadow-color;
+    -moz-box-shadow: $shadow-size $shadow-color;
+    box-shadow: $shadow-size $shadow-color;
+  }
+}
+
+.englishLevel{
+  background: rgb(255, 255, 180);
+  color: #1e1e26;
+  padding: 1.5px;
+  border-radius: 5px;
+}
+.learningBadge{
+    background: rgb(180, 198, 255);
+      color: #1e1e26;
+      padding: 1.5px;
+      border-radius: 5px;
+}
+
+.backBtnBtn {
+  background: transparent;
+  color: $text-color;
+  border: 0;
+  font-size: 30px;
+  transition: all 0.5s;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    background-color: $hover-color;
+    transition: width 0.5s, left 0.5s;
+    width: 0;
+  }
+  
+  &:hover {
+    transform: scale(1.2);
+    color: $hover-color;
+    
+    &:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+.backBtn{
+  transition: all 0.5s;
+  border-radius: 20px;
+  display: block;
+  width: fit-content;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  &:hover {
+    -webkit-box-shadow: $shadow-size $shadow-color;
+    -moz-box-shadow: $shadow-size $shadow-color;
+    box-shadow: $shadow-size $shadow-color;
+    background: $shadow-color-forBG;
+  }
+}
+
+.fade-out-right {
+  animation: fadeOutRight 0.5s forwards;
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.5s forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-out-left {
+  animation: fadeOutLeft 0.5s forwards;
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.5s forwards;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// todo fix animation for skills!
