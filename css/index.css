@@ -64,33 +64,6 @@ ul {
   color: rgb(166, 166, 166);
 }
 
-.contactA {
-  display: inline-block;
-  text-decoration: none;
-  color: #e0e0e0;
-  transition: all 0.5s;
-  position: relative;
-}
-.contactA:hover {
-  transform: scale(1.3);
-  color: rgb(246, 178, 141);
-}
-.contactA:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  background-color: rgb(246, 178, 141);
-  transition: width 0.5s;
-  width: 0;
-  display: block;
-  height: 1.5px;
-}
-.contactA:hover:after {
-  width: 100%;
-}
-
 .contact {
   margin-top: 3vh;
 }
