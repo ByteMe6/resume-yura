@@ -105,4 +105,64 @@ buttonProjects.addEventListener("click", function () {
   );
 });
 
-// Добавьте здесь новые кнопки с их обработчиками, если появятся дополнительные секции.
+let educationOpenBtn = document.querySelector(".educationOpenBtn");
+educationOpenBtn.addEventListener("click", function () {
+  renderBox(
+    "Education",
+    `
+      <ul style="margin-top: 5px;">
+        <li>2023-2025 - GoITeense</li>
+      </ul>
+    `
+  );
+})
+
+let experienceOpenBtn = document.querySelector(".experienceOpenBtn");
+
+experienceOpenBtn.addEventListener("click", function () {
+  renderBox(
+    "Experience",
+    `
+      <ul style="margin-top: 5px;">
+                <li>
+          <strong>eventBooster</strong> <span class="date"> (2023.12 - 2024.01)</span>
+          <ul>
+            <li>Team Lead</li>
+            <li>card render</li>
+            <li>Set up github</li>
+            <li>modal opening</li>
+            <li>styles</li>
+            <li>country find</li>
+            <li>pagination</li>
+            </ul>
+        </li>
+  
+
+        <li style="margin-top: 10px;">
+          <strong>Nice View</strong> <span class="date"> (2023.12 - 2024.01)</span>
+          <ul>
+            <li>Team Lead</li>
+            <li>Made 3+ sections</li>
+            <li>Set up github</li>
+            <li>Ensured smooth collaboration and timely delivery of project milestones.</li>
+            </ul>
+        </li>
+    `
+  );
+});
+
+let hobbiesOpenBtn = document.querySelector(".hobbiesOpenBtn");
+
+hobbiesOpenBtn.addEventListener("click", function () {
+  renderBox(
+    "Hobbies",
+    `
+      <ul style="margin-top: 5px;">
+        <li>Coding</li>
+        <li>Reading</li>
+        <li>Playing</li>
+        <li>Some tech staf</li>
+      </ul>
+    `
+  );
+})

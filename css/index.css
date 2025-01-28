@@ -333,3 +333,10 @@ a:hover:after {
   padding: 1.5px;
   border-radius: 5px;
 }
+
+.date {
+  color: rgb(166, 166, 166);
+  background-color: #424242;
+  padding: 5px;
+  border-radius: 15px;
+}
