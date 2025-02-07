@@ -100,6 +100,8 @@ buttonProjects.addEventListener("click", function () {
         <li><a href="https://ByteMe6.github.io/database/" aria-label="Database project">database</a></li>
         <li><a href="https://byteme6.github.io/arrron/" aria-label="Arron project">Arron</a></li>
         <li><a href="https://byteme6.github.io/eventBooster/" aria-label="Event Booster project">Event booster</a></li>
+        <li><a href="https://byteme6.github.io/simple-coffe/" aria-label="Simple coffe">Simple coffe</a></li>
+
       </ul>
     `
   );
