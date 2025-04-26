@@ -103,7 +103,7 @@ buttonProjects.addEventListener("click", function () {
         <li><a href="https://byteme6.github.io/simple-coffe/" aria-label="Simple coffe">Simple coffe</a></li>
         <li><a href="https://byteme6.github.io/streakReminders/" aria-label="Simple coffe">streaks</a></li>
         <li><a href="https://byteme6.github.io/miniDairy/" aria-label="Simple coffe">mini dairy (some notes for 24 hours)</a></li>
-
+<li><a href="https://byteme6.github.io/miniDairy/" aria-label="Simple coffe">ticTacToe (react)</a></li>
 
       </ul>
     `
